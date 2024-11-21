@@ -1,0 +1,237 @@
+.circle {
+    border-radius: 1000px;
+    padding: 10px;
+    float:left;
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    background-color:rgb(255, 56, 56);
+    width:700px;
+    height:700px;
+    animation-name:roll;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    border:1px black solid;
+    animation-fill-mode: forwards;
+    margin-top:130px
+}
+
+.stick{
+    position:absolute;
+    height:720px;
+    width:4px;
+    background-color: black;
+    margin-left:350px;
+    margin-top:-10px;
+}
+
+.stick2{
+    position:absolute;
+    height:4px;
+    width:720px;
+    background-color: black;
+    margin-left:-10px;
+    margin-top:350px;
+}
+
+.stick3{
+    position:absolute;
+    height:4px;
+    width:720px;
+    background-color: black;
+    margin-left:-10px;
+    margin-top:350px;
+    transform: rotate(45deg)
+}
+
+.stick4{
+    position:absolute;
+    height:4px;
+    width:720px;
+    background-color: black;
+    margin-left:-10px;
+    margin-top:350px;
+    transform: rotate(-45deg)
+}
+
+.triangle{
+    width:365px;
+    height:365px;
+    margin-left:40px;
+    margin-top:-12px;
+    transform: rotate(0deg)
+}
+
+.triangle2{
+    width:100px;
+    height:100px;
+    margin-left:40px;
+    margin-top:-12px;
+    transform: rotate(22.5deg);
+    position:absolute;
+    margin-left:-50px;
+    animation-name:jump;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump{
+    0%{
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    100%{
+        margin-top:20px;
+        margin-bottom:-20px;
+    }
+}
+
+.body{
+    background-image: url(cas.jfif);
+    height:800px;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ad{
+    display: flex;
+    align-content: center;
+    height:100%;
+    width:fit-content;
+    opacity:0;
+    animation-name:ad;
+    animation-delay: 13s;
+    animation-duration: 3s;
+    position:fixed;
+    top:20px;
+    right:200px
+}
+
+.hit{
+    width:80%;
+    height:80%;
+}
+
+@keyframes ad{
+    0%{
+        opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+.ad2{
+    display: flex;
+    align-content: center;
+    height:100%;
+    width:fit-content;
+    opacity:0;
+    animation-name:ad;
+    animation-delay: 16s;
+    animation-duration: 3s;
+    position:fixed;
+    top:20px;
+    right:200px
+}
+
+@keyframes ad2{
+    0%{
+        opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+.ad3{
+    display: flex;
+    align-content: center;
+    height:100%;
+    width:fit-content;
+    opacity:0;
+    animation-name:ad;
+    animation-delay: 19s;
+    animation-duration: 3s;
+    position:fixed;
+    top:20px;
+    right:200px
+}
+
+@keyframes ad3{
+    0%{
+        opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+@keyframes roll{
+    0%{
+        transofrm:rotate(45)
+    }
+    50%{
+        transform: rotate(90deg)
+    }
+    100%{
+        transform: rotate(742.5deg)
+    }
+}
+.contacts{
+    height:50px;
+    width:100px;
+    display:flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    right:90px;
+    top:20px;
+}
+.contacts2{
+    height:50px;
+    width:100px;
+    display:flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    left:90px;
+    top:20px;
+}
+.icona2{
+    height:50px;
+    width:50px;
+    z-index: 500;
+    position: relative;
+    
+}
+.sitehead2{
+    width:82%;
+    height:90px;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    justify-self: center;
+    background-color: rgb(255, 161, 38);
+    position: sticky;top:0px;
+    z-index:3;
+}
+.helo{
+    position: absolute;
+    top:100%;
+    display:flex;
+    justify-content: space-around;
+    justify-self: center;
+}
+.icona{
+    height:80px;
+    width:135px;
+}
